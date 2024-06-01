@@ -14,19 +14,24 @@ app.set("view engine", ".hbs");
 app.set("views", "src/resources/views");
 
 // morgan
-app.use(morgan("combined"));
+// app.use(morgan("combined"));
 
 // main
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (req, res) => {
   res.render("home");
 });
-
-app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/news", (req, res) => {
   res.render("news");
 });
 
+app.get("/search", (req, res) => {
+  console.log(req.query)
+  res.render("search");
+});
+
 app.listen(port, () => {
-  console.log("listening on port " + port);
+  console.log(`listening on port ${port}\n`);
 });
