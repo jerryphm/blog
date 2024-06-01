@@ -1,0 +1,35 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "server side app for a blog website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jerryphm/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "learn",
+    "community",
+    "news",
+    "life",
+    "experience",
+    "lesson"
+  ],
+  "author": "jerryphm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerryphm/blog/issues"
+  },
+  "homepage": "https://github.com/jerryphm/blog#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
